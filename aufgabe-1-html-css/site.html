@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My tiny Corner</title>
+  <style>
+    :root {
+      --primary: #9c0000;
+      --bg: #f4f6f8;
+      --text: #1d1d1d;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      background: #e3eaf1;
+      padding: 0.8rem;
+    }
+
+    nav a {
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 1.5rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: var(--primary);
+    }
+
+    .karten {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .karte {
+      flex: 1;
+      background: white;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+    }
+
+    img {
+      max-width: 100%;
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 700px) {
+      .karten {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to my tiny corner of the wide web</h1>
+  </header>
+
+  <nav>
+    <a href="#hobbys">Hobbys</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <main>
+    <section id="about me">
+        <h2> About Me</h2>
+            <p>
+            Ich bin Korbinian und wohne in Graz. In meiner Freizeit fixe ich meistens irgendwelche services in meinem Homelab oder bereite
+            mich auf meinen nächsten tontechnik service vor. Wenn Nachts das wetter gut ist, gehe ich gerne raus und betreibe Astrofotografie.
+            </p> 
+    </section>
+
+    <section id="hobbys">
+      <h2>Meine Hobbys</h2>
+      <ul>
+        <li>Tontechnik</li>
+        <li>Astrofotografie</li>
+        <li>Programmieren in Cpp und Python</li>
+        <li>Musik hören</li>
+        <li>Homlab maintainen</li>
+      </ul>
+    </section>
+
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <div class="karten">
+        <div class="karte">
+          <h3>Wohnort</h3>
+          <p>Graz, Österreich</p>
+        </div>
+        <div class="karte">
+          <h3>Schule</h3>
+          <p>   BrgKepler</p>
+          <h3>Klasse</h3>
+          <P>   7c</P>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Korbinian Glanz aka @Rbae1402</p>
+  </footer>
+</body>
+</html>
